@@ -8,11 +8,11 @@ CSCS is designed to provide a flexible scripting solution that integrates seamle
 
 ## Quick Example
 
-### Heading 3
+<!-- ### Heading 3
 
 #### Heading 4
 
-### Heading 3
+### Heading 3 -->
 
 ```python
 // A simple CSCS script
@@ -37,11 +37,13 @@ print("Hello, CSCS!");
 
 
 
-# CSCS(Wpf) extended for TAS (Manual)
+<!-- # CSCS(Wpf) extended for TAS (Manual) -->
 
 ## Heading 2 - DESCRIPTION OF CSCS
 
 CSCS (Customized Scripting in C#) is a scripting language framework, which is very easy to integrate into any C# project and adjust according to your needs. Basically, the concept of CSCS is not only a language, but also a framework that you can use to create your own language. Since the compiler will be inside of your project, you can do whatever you want with the language: add new features, modify existing ones, etc.
+
+### 3333
 
 - The syntax is a mixture between C#, JavaScript, and Python.
 - All statements must end with a semicolon ";".

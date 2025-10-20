@@ -52,3 +52,23 @@ nav:
 
   - API Reference: api-reference.md
   - Examples: examples.md
+
+
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition  # For note/warning blocks
+  - toc:
+      permalink: true
+
+
+
+# # Extra CSS/JS
+# extra_css:
+#   - stylesheets/extra.css
+# extra_javascript:
+#   - javascripts/extra.js
