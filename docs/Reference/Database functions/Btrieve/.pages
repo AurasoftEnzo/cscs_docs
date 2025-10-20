@@ -1,0 +1,5 @@
+title: Btrieve functions
+arrange:
+  - index.md
+  - OPENV.md
+  - ...               # Rest alphabetically
