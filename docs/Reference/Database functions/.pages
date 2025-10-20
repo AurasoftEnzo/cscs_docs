@@ -1,0 +1,8 @@
+title: Database functions
+arrange:
+  - SQL
+  - Btrieve
+  # - index.md          # Overview first
+  # - standard-library.md  # Most important API
+  - ...               # Rest alphabetically
+  # - deprecated.md     # Keep deprecated last

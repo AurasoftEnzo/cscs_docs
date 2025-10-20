@@ -1,0 +1,6 @@
+title: CSCS Reference
+arrange:
+  - index.md          # Overview first
+  - General
+  - ...               # Rest alphabetically
+  # - deprecated.md     # Keep deprecated last

@@ -21,54 +21,105 @@
 
 site_name: CSCS Documentation
 site_description: Documentation for CSCS - Custom Scripting in C#
+site_author: Your Name
 
 theme:
   name: material
+  # palette:
+  #   - scheme: default
+  #     primary: purple
+  #     accent: orange
+
   palette:
+    # Light mode
     - scheme: default
       primary: teal
-      accent: purple
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+
   features:
     - navigation.tabs
     - navigation.sections
-    - navigation.expand
+    # - navigation.expand
+    # - navigation.path
     - search.suggest
     - search.highlight
     - content.code.copy # adds a copy button to code blocks
     # - toc.integrate
     # - navigation.top
+    # - content.action.edit # adds an "Edit on GitHub" link
+    - content.code.annotate
 
-nav:
-  - Home: index.md
-  
-  - Getting Started:
-    - Installation: getting-started/installation.md
-    - First Script: getting-started/first-script.md
-  
-  - Reference:
-    - Variables: reference/variables.md
-    - Functions: reference/functions.md
-    - Control Flow: reference/control-flow.md
 
-  - API Reference: api-reference.md
-  - Examples: examples.md
+# nav:
+#   - Home: index.md
+  
+#   - Getting Started:
+#     - Installation: getting-started/installation.md
+#     - First Script: getting-started/first-script.md
+  
+#   - Reference:
+#     - Variables: reference/variables.md
+#     - Functions: reference/functions.md
+#     - Control Flow: reference/control-flow.md
+
+#   # - API Reference: api-reference.md
+#   - Examples: examples.md
 
 
 
 markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - admonition  # For note/warning blocks
+  - pymdownx.details
+  - pymdownx.highlight: # Highlight.js integration
+      use_pygments: true # Use Pygments for syntax highlighting
+      anchor_linenums: true # Adds anchor links to line numbers
+      linenums: true # Enable line numbers
+  - pymdownx.critic: # Critic markup support
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji: # Emoji support
+      emoji_index: !!python/name:materialx.emoji.twemoji # Use Twemoji for emoji rendering
+      emoji_generator: !!python/name:materialx.emoji.to_svg # Render emojis as SVGs
+
+  - pymdownx.caret: # Superscript and subscript support
+  - pymdownx.keys: # Keyboard key styling
+  - pymdownx.inlinehilite: # Inline code highlighting
+  - pymdownx.snippets: # Snippet inclusion
+  - admonition: # For note/warning blocks
   - toc:
       permalink: true
+      toc_depth: 1-4
+  - pymdownx.details: # Details/summary support
+  - pymdownx.tabbed:
+      alternate_style: true
 
 
+plugins:
+  - search
+  - awesome-pages
 
 # # Extra CSS/JS
 # extra_css:
 #   - stylesheets/extra.css
 # extra_javascript:
 #   - javascripts/extra.js
+
+
+
+# Page tree exclusion (files that won't appear in nav automatically)
+watch:
+  - docs
+  - mkdocs.yml

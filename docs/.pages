@@ -1,0 +1,17 @@
+# nav:
+#   - Home: index.md
+#   - Reference: Reference/
+#   # - Tutorials: Tutorials/
+#   # - test.md
+
+
+title: CSCS Examples
+arrange:
+  - index.md          # Home first
+  - Reference  # Then Reference
+  - ...               # Rest alphabetically
+  - FAQ            # FAQ always last
+
+# # Exclude files from navigation (they won't appear in menu)
+# hide:
+#   - test.md
