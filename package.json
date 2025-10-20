@@ -1,0 +1,23 @@
+{
+  "name": "cscs_docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "mkdocs serve",
+    "build": "mkdocs build",
+    "deploy": "mkdocs gh-deploy --clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AurasoftEnzo/cscs_docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AurasoftEnzo/cscs_docs/issues"
+  },
+  "homepage": "https://github.com/AurasoftEnzo/cscs_docs#readme"
+}

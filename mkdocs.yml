@@ -1,0 +1,37 @@
+# site_name: CSCS Documentation
+# site_description: Documentation for CSCS - Custom Scripting in C#
+
+# theme:
+#   name: material
+#   features:
+#     - navigation.tabs
+#     - navigation.sections
+#     - toc.integrate
+#     - navigation.top
+#     - search.suggest
+#     - search.highlight
+
+# repo_url: https://github.com/AurasoftEnzo/cscs-docs
+# repo_name: AurasoftEnzo/cscs-docs
+
+# nav:
+#   - Home: index.md
+#   - Getting Started: getting-started.md
+#   - Language Basics: language-basics.md
+
+site_name: CSCS Documentation
+site_description: Documentation for CSCS - Custom Scripting in C#
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Language Basics: language-basics.md
