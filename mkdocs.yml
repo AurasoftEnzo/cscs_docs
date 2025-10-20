@@ -24,14 +24,31 @@ site_description: Documentation for CSCS - Custom Scripting in C#
 
 theme:
   name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: purple
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.expand
     - search.suggest
     - search.highlight
+    - content.code.copy # adds a copy button to code blocks
+    # - toc.integrate
+    # - navigation.top
 
 nav:
   - Home: index.md
-  - Getting Started: getting-started.md
-  - Language Basics: language-basics.md
+  
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - First Script: getting-started/first-script.md
+  
+  - Reference:
+    - Variables: reference/variables.md
+    - Functions: reference/functions.md
+    - Control Flow: reference/control-flow.md
+
+  - API Reference: api-reference.md
+  - Examples: examples.md
